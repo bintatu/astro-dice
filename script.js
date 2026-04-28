@@ -20,7 +20,7 @@ function rollAstroDice() {
   const house = Math.floor(Math.random() * 12) + 1;
   const planet = planets[Math.floor(Math.random() * planets.length)];
 
-  return { sign, house, planet };
+  return { planet, sign, house };
 }
 
 function drawAstro() {
@@ -30,7 +30,7 @@ function drawAstro() {
   const result = rollAstroDice();
 
   const output =
-    `${result.sign} × ${result.house}ハウス × ${result.planet}`;
+    `${result.planet} × ${result.sign} × ${result.house}ハウス`;
 
   document.getElementById("result").textContent = output;
 
