@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 1.6;
+  }
+
+  input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  #result {
+    margin-top: 16px;
+    white-space: pre-wrap;
+    font-size: 16px;
+  }
+</style>
+   <title>アストロダイス</title>
+</head>
+<body>
+
+<h2>アストロダイス</h2>
+
+<input type="text" id="question" placeholder="占いたいことを入力">
+<br><br>
+
+<button id="drawBtn" onclick="drawAstro()">占う</button>
+
+<pre id="result"></pre>
+
+<script src="script.js"></script>
+
+<button onclick="copyResult()" style="margin-top:10px;">
+  結果をコピー
+</button>
+
+</body>
+</html>
